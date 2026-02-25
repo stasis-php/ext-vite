@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stasis\Extension\Vite\Reference;
 
-class PathReferenceParser implements ReferenceParserInterface
+class RelativeReferenceParser implements ReferenceParserInterface
 {
     private readonly string $baseDir;
 
