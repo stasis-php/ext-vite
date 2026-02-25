@@ -1,0 +1,9 @@
+parameters:
+  level: 8
+  tmpDir: var/phpstan
+  paths:
+    - src
+    - tests
+
+  reportUnmatchedIgnoredErrors: true
+  ignoreErrors:
