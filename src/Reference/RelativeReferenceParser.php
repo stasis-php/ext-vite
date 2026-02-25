@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Stasis\Extension\Vite\Reference;
 
+/**
+ * Simple reference parser for assets in a single directory.
+ */
 class RelativeReferenceParser implements ReferenceParserInterface
 {
     private readonly string $baseDir;

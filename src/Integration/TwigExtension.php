@@ -8,6 +8,9 @@ use Stasis\Extension\Vite\AssetMapperInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
+/**
+ * Twig extension for Vite integration. Provides `asset_import` and `asset_path` functions.
+ */
 class TwigExtension extends AbstractExtension
 {
     public function __construct(

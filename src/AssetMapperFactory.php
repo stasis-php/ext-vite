@@ -13,6 +13,9 @@ use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
 class AssetMapperFactory
 {
+    /**
+     * Creates an instance of Vite asset mapper {@see AssetMapperInterface}.
+     */
     public static function create(string $manifestPath, ReferenceParserInterface $referenceParser): AssetMapperInterface
     {
         $assetFactory = new AssetFactory();
