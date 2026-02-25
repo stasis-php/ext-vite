@@ -9,6 +9,9 @@ use Stasis\Extension\Vite\Asset\AssetFactory;
 use Stasis\Extension\Vite\AssetMapperInterface;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
+/**
+ * @internal
+ */
 class DevAssetMapper implements AssetMapperInterface
 {
     public function __construct(

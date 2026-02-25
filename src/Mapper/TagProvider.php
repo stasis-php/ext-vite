@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Stasis\Extension\Vite\Mapper;
 
+/**
+ * @internal
+ */
 class TagProvider
 {
     public function module(string $path): string

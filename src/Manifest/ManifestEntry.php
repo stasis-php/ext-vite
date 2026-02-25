@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Stasis\Extension\Vite\Manifest;
 
-readonly class ManifestEntry
+/**
+ * @internal
+ */
+final readonly class ManifestEntry
 {
     public function __construct(
         public string $src,

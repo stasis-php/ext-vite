@@ -9,6 +9,9 @@ use Stasis\Extension\Vite\AssetMapperInterface;
 use Stasis\Extension\Vite\Manifest\Manifest;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
+/**
+ * @internal
+ */
 class ManifestAssetMapper implements AssetMapperInterface
 {
     private const string BASE = '/';

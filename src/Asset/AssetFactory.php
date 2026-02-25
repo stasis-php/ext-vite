@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Stasis\Extension\Vite\Asset;
 
+/**
+ * @internal
+ */
 class AssetFactory
 {
     public function fromSourcePath(string $sourcePath, string $base = '/'): Asset

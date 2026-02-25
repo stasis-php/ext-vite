@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Stasis\Extension\Vite\Asset;
 
+/**
+ * @internal
+ */
 final readonly class Asset
 {
     public function __construct(
