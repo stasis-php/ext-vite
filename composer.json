@@ -1,0 +1,31 @@
+{
+    "name": "stasis/ext-vite",
+    "description": "Vite extension for Stasis",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/stasis-php/ext-vite",
+    "authors": [
+        {
+            "name": "Volodymyr Stelmakh",
+            "homepage": "https://github.com/vstelmakh"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "stasis/stasis": "dev-refactor-event-listeners as 0.2.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Stasis\\Extension\\Vite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stasis\\Extension\\Vite\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
