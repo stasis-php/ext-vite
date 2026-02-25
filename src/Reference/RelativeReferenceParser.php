@@ -11,7 +11,8 @@ class RelativeReferenceParser implements ReferenceParserInterface
 {
     private readonly string $baseDir;
 
-    public function __construct(string $baseDir) {
+    public function __construct(string $baseDir)
+    {
         $this->baseDir = rtrim($baseDir, '/');
     }
 

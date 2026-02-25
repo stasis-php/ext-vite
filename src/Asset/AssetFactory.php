@@ -21,7 +21,7 @@ class AssetFactory
     private function getPublicPath(string $base, string $path): string
     {
         $fullPath = sprintf('%s/%s', rtrim($base, '/'), ltrim($path, '/'));
-        return str_replace(array('"', '\''), ['%22', '%27'], $fullPath);
+        return str_replace(['"', '\''], ['%22', '%27'], $fullPath);
     }
 
     private function getExtension(string $path): string

@@ -9,6 +9,7 @@ namespace Stasis\Extension\Vite\Manifest;
  */
 class Manifest
 {
+    /** @var array<string, ManifestEntry> */
     private array $map;
 
     public function __construct(string $path)
