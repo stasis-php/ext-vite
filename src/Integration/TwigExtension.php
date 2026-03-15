@@ -13,6 +13,9 @@ use Twig\TwigFunction;
  */
 class TwigExtension extends AbstractExtension
 {
+    /**
+     * @internal
+     */
     public function __construct(
         private AssetMapperInterface $assetMapper,
     ) {}

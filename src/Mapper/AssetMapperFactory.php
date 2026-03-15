@@ -8,6 +8,9 @@ use Stasis\Extension\Vite\Asset\AssetFactory;
 use Stasis\Extension\Vite\Manifest\Manifest;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
+/**
+ * @internal
+ */
 class AssetMapperFactory
 {
     /**
