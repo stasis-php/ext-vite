@@ -23,6 +23,7 @@ class ManifestAssetMapper implements AssetMapperInterface
         private TagProvider $tagProvider,
     ) {}
 
+    #[\Override]
     public function import(string $reference): string
     {
         $tags = [];
@@ -56,6 +57,7 @@ class ManifestAssetMapper implements AssetMapperInterface
         return implode("\n", $tags);
     }
 
+    #[\Override]
     public function path(string $reference): string
     {
         $referencePath = $this->referenceParser->getPath($reference);

@@ -16,6 +16,7 @@ class RelativeReferenceParser implements ReferenceParserInterface
         $this->baseDir = rtrim($baseDir, '/');
     }
 
+    #[\Override]
     public function getPath(string $reference): string
     {
         return sprintf(

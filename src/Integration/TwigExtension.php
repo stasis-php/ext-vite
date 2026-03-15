@@ -17,6 +17,7 @@ class TwigExtension extends AbstractExtension
         private AssetMapperInterface $assetMapper,
     ) {}
 
+    #[\Override]
     public function getFunctions(): array
     {
         return [
