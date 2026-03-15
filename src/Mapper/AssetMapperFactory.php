@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stasis\Extension\Vite;
+namespace Stasis\Extension\Vite\Mapper;
 
 use Stasis\Extension\Vite\Asset\AssetFactory;
 use Stasis\Extension\Vite\Manifest\Manifest;
-use Stasis\Extension\Vite\Mapper\DevAssetMapper;
-use Stasis\Extension\Vite\Mapper\ManifestAssetMapper;
-use Stasis\Extension\Vite\Mapper\TagProvider;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
 class AssetMapperFactory

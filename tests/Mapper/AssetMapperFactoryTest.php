@@ -1,9 +1,9 @@
 <?php
 
-namespace Stasis\Extension\Vite\Tests;
+namespace Stasis\Extension\Vite\Tests\Mapper;
 
-use Stasis\Extension\Vite\AssetMapperFactory;
 use PHPUnit\Framework\TestCase;
+use Stasis\Extension\Vite\Mapper\AssetMapperFactory;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
 class AssetMapperFactoryTest extends TestCase

@@ -8,6 +8,8 @@ use Stasis\EventDispatcher\RouterConfig\RouterConfigData;
 use Stasis\EventDispatcher\RouterConfig\RouterConfigListenerInterface;
 use Stasis\Extension\ExtensionInterface;
 use Stasis\Extension\Vite\Integration\TwigExtension;
+use Stasis\Extension\Vite\Mapper\AssetMapperFactory;
+use Stasis\Extension\Vite\Mapper\AssetMapperInterface;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 use Stasis\Extension\Vite\Reference\RelativeReferenceParser;
 use Stasis\Router\Route\Asset;

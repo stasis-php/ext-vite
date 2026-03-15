@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Stasis\Extension\Vite\Mapper;
 
 use Stasis\Extension\Vite\Asset\AssetFactory;
-use Stasis\Extension\Vite\AssetMapperInterface;
 use Stasis\Extension\Vite\Manifest\Manifest;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 

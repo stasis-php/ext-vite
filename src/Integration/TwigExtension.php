@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stasis\Extension\Vite\Integration;
 
-use Stasis\Extension\Vite\AssetMapperInterface;
+use Stasis\Extension\Vite\Mapper\AssetMapperInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
