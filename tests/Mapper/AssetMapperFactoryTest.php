@@ -4,15 +4,27 @@ namespace Stasis\Extension\Vite\Tests\Mapper;
 
 use PHPUnit\Framework\TestCase;
 use Stasis\Extension\Vite\Mapper\AssetMapperFactory;
+use Stasis\Extension\Vite\Mapper\DevAssetMapper;
+use Stasis\Extension\Vite\Mapper\ManifestAssetMapper;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
 class AssetMapperFactoryTest extends TestCase
 {
-    public function testCreate(): void
+    public function testCreateManifest(): void
     {
         $manifestPath = __DIR__ . '/manifest.json';
         $referenceParser = $this->createStub(ReferenceParserInterface::class);
-        AssetMapperFactory::create($manifestPath, $referenceParser);
-        $this->expectNotToPerformAssertions();
+        $assetMapper = AssetMapperFactory::create($manifestPath, $referenceParser);
+        self::assertInstanceOf(ManifestAssetMapper::class, $assetMapper);
+    }
+
+    public function testCreateDev(): void
+    {
+        putenv('APP_ENV=dev');
+        $manifestPath = __DIR__ . '/manifest.json';
+        $referenceParser = $this->createStub(ReferenceParserInterface::class);
+        $assetMapper = AssetMapperFactory::create($manifestPath, $referenceParser);
+        putenv('APP_ENV');
+        self::assertInstanceOf(DevAssetMapper::class, $assetMapper);
     }
 }
