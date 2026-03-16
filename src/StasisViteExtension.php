@@ -26,10 +26,8 @@ final readonly class StasisViteExtension implements ExtensionInterface, RouterCo
     /**
      * Creates a new Stasis Vite extension instance with default {@see RelativeReferenceParser}.
      *
-     * @param string $assetsSourcePath Absolute path to the directory with assets produced by Vite,
-     *                                 example: `__DIR__ . '/dist_assets/assets'`.
-     * @param string $manifestPath Absolute path to the Vite manifest file,
-     *                             example: `__DIR__ . '/dist_assets/manifest.json'`.
+     * @param string $assetsSourcePath Absolute path to the directory with assets produced by Vite, example: `__DIR__ . '/dist_assets/assets'`.
+     * @param string $manifestPath Absolute path to the Vite manifest file, example: `__DIR__ . '/dist_assets/manifest.json'`.
      * @param string $assetsRoutePath Public URL path from where assets will be served, example: `/assets`.
      */
     public static function create(
@@ -44,10 +42,8 @@ final readonly class StasisViteExtension implements ExtensionInterface, RouterCo
     /**
      * Creates a new Stasis Vite extension instance with a custom reference parser.
      *
-     * @param string $assetsSourcePath Absolute path to the directory with assets produced by Vite,
-     *                                 example: `__DIR__ . '/dist_assets/assets'`.
-     * @param string $manifestPath Absolute path to the Vite manifest file,
-     *                             example: `__DIR__ . '/dist_assets/assets/manifest.json'`.
+     * @param string $assetsSourcePath Absolute path to the directory with assets produced by Vite, example: `__DIR__ . '/dist_assets/assets'`.
+     * @param string $manifestPath Absolute path to the Vite manifest file, example: `__DIR__ . '/dist_assets/assets/manifest.json'`.
      * @param ReferenceParserInterface $referenceParser Custom reference parser implementation.
      * @param string $assetsRoutePath Public URL path from where assets will be served, example: `/assets`.
      */
@@ -63,7 +59,7 @@ final readonly class StasisViteExtension implements ExtensionInterface, RouterCo
 
     /**
      * Registers Stasis Vite Twig extension with the provided Twig environment.
-     * Note: This method mutates the Twig environment and returns $this for chaining.
+     * Note: This method mutates the Twig environment and returns `self` for chaining.
      */
     public function withTwig(Environment $twig): self
     {
