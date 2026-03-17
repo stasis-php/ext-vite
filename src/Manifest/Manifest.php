@@ -25,7 +25,7 @@ class Manifest
     private function loadManifest(string $path): void
     {
         if (!file_exists($path)) {
-            throw new \RuntimeException(sprintf('Manifest file "%s" not exist. Did you run "yarn vite build"?', $path));
+            throw new \RuntimeException(sprintf('Manifest file "%s" not exist. Did you run "vite build"?', $path));
         }
 
         $contents = file_get_contents($path);
