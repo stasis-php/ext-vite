@@ -11,7 +11,7 @@ use Stasis\Router\Route\Asset;
 use Twig\Environment;
 use Twig\Extension\AbstractExtension;
 
-class StasisViteExtensionTest extends TestCase
+final class StasisViteExtensionTest extends TestCase
 {
     public function testCreate(): void
     {

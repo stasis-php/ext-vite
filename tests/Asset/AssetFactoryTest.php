@@ -7,7 +7,7 @@ use Stasis\Extension\Vite\Asset\Asset;
 use Stasis\Extension\Vite\Asset\AssetFactory;
 use PHPUnit\Framework\TestCase;
 
-class AssetFactoryTest extends TestCase
+final class AssetFactoryTest extends TestCase
 {
     private AssetFactory $factory;
 

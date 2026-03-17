@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use Stasis\Extension\Vite\Asset\Asset;
 use PHPUnit\Framework\TestCase;
 
-class AssetTest extends TestCase
+final class AssetTest extends TestCase
 {
     #[DataProvider('scriptExtensionProvider')]
     public function testIsScript(string $extension, bool $expected): void

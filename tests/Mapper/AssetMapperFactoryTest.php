@@ -8,7 +8,7 @@ use Stasis\Extension\Vite\Mapper\DevAssetMapper;
 use Stasis\Extension\Vite\Mapper\ManifestAssetMapper;
 use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 
-class AssetMapperFactoryTest extends TestCase
+final class AssetMapperFactoryTest extends TestCase
 {
     public function testCreateManifest(): void
     {
