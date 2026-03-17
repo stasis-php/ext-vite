@@ -7,9 +7,9 @@ namespace Stasis\Extension\Vite\Reference;
 /**
  * Simple reference parser for assets in a single directory.
  */
-class RelativeReferenceParser implements ReferenceParserInterface
+final readonly class RelativeReferenceParser implements ReferenceParserInterface
 {
-    private readonly string $baseDir;
+    private string $baseDir;
 
     public function __construct(string $baseDir)
     {

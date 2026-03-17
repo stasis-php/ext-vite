@@ -7,7 +7,7 @@ namespace Stasis\Extension\Vite\Mapper;
 /**
  * @internal
  */
-class TagProvider
+final readonly class TagProvider
 {
     public function module(string $path): string
     {

@@ -11,7 +11,7 @@ use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 /**
  * @internal
  */
-class DevAssetMapper implements AssetMapperInterface
+final readonly class DevAssetMapper implements AssetMapperInterface
 {
     public function __construct(
         private ReferenceParserInterface $referenceParser,

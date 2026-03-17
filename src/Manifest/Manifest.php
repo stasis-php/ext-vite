@@ -7,7 +7,7 @@ namespace Stasis\Extension\Vite\Manifest;
 /**
  * @internal
  */
-class Manifest
+final class Manifest
 {
     /** @var array<string, ManifestEntry> */
     private array $map;

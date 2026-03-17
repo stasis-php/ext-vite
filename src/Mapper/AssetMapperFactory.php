@@ -11,7 +11,7 @@ use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 /**
  * @internal
  */
-class AssetMapperFactory
+final readonly class AssetMapperFactory
 {
     /**
      * Creates an instance of Vite asset mapper {@see AssetMapperInterface}.

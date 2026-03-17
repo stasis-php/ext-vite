@@ -11,7 +11,7 @@ use Stasis\Extension\Vite\Reference\ReferenceParserInterface;
 /**
  * @internal
  */
-class ManifestAssetMapper implements AssetMapperInterface
+final readonly class ManifestAssetMapper implements AssetMapperInterface
 {
     private const string BASE = '/';
 
