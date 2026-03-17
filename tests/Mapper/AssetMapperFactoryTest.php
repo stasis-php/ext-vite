@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Stasis\Extension\Vite\Tests\Mapper;
 
 use PHPUnit\Framework\TestCase;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Stasis\Extension\Vite\Tests\Asset;
 
 use PHPUnit\Framework\Attributes\DataProvider;
