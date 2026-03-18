@@ -7,7 +7,7 @@ namespace Stasis\Extension\Vite\Asset;
 /**
  * @internal
  */
-class AssetFactory
+final readonly class AssetFactory
 {
     public function fromSourcePath(string $sourcePath, string $base = '/'): Asset
     {
