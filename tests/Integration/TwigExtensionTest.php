@@ -17,6 +17,7 @@ final class TwigExtensionTest extends TestCase
     private TwigExtension $extension;
     private AssetMapperInterface&MockObject $assetMapper;
 
+    #[\Override]
     public function setUp(): void
     {
         $this->assetMapper = $this->createMock(AssetMapperInterface::class);

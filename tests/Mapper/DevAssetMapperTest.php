@@ -16,6 +16,7 @@ final class DevAssetMapperTest extends TestCase
     private MockObject&ReferenceParserInterface $referenceParser;
     private DevAssetMapper $mapper;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->referenceParser = $this->createMock(ReferenceParserInterface::class);

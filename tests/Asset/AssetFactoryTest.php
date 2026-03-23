@@ -13,6 +13,7 @@ final class AssetFactoryTest extends TestCase
 {
     private AssetFactory $factory;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->factory = new AssetFactory();
