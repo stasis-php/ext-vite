@@ -29,7 +29,7 @@ final class StasisViteExtensionTest extends TestCase
 
     public function testCreateWithReferenceParser(): void
     {
-        $referenceParser = $this->createStub(ReferenceParserInterface::class);
+        $referenceParser = self::createStub(ReferenceParserInterface::class);
 
         $extension = StasisViteExtension::createWithReferenceParser(
             assetsSourcePath: __DIR__ . '/dist_assets',
@@ -48,7 +48,7 @@ final class StasisViteExtensionTest extends TestCase
         $twig
             ->expects($this->once())
             ->method('addExtension')
-            ->with($this->isInstanceOf(AbstractExtension::class));
+            ->with(self::isInstanceOf(AbstractExtension::class));
 
         $extension = StasisViteExtension::create(
             assetsSourcePath: __DIR__ . '/dist_assets',
