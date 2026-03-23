@@ -5,7 +5,7 @@ Stasis Vite Extension is an adapter that integrates [Vite](https://vite.dev/) fr
 ## Installation
 Install the latest version with [Composer](https://getcomposer.org/):
 ```shell
-composer require stasis-php/ext-vite
+composer require stasis/ext-vite
 ```
 
 ## Configuration
