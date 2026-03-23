@@ -69,7 +69,7 @@ return new class implements ConfigInterface
 };
 ```
 
-### Configuration with Twig Extension
+### Usage with Twig Extension
 If you're using Twig, register the extension and enable Twig integration:
 
 ```php
