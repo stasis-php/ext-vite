@@ -15,7 +15,7 @@ final class AssetMapperFactoryTest extends TestCase
     public function testCreateManifest(): void
     {
         $manifestPath = __DIR__ . '/../manifest.json';
-        $referenceParser = $this->createStub(ReferenceParserInterface::class);
+        $referenceParser = self::createStub(ReferenceParserInterface::class);
         $assetMapper = AssetMapperFactory::create($manifestPath, $referenceParser);
         self::assertInstanceOf(ManifestAssetMapper::class, $assetMapper);
     }
@@ -24,7 +24,7 @@ final class AssetMapperFactoryTest extends TestCase
     {
         putenv('APP_ENV=dev');
         $manifestPath = __DIR__ . '/../manifest.json';
-        $referenceParser = $this->createStub(ReferenceParserInterface::class);
+        $referenceParser = self::createStub(ReferenceParserInterface::class);
         $assetMapper = AssetMapperFactory::create($manifestPath, $referenceParser);
         putenv('APP_ENV');
         self::assertInstanceOf(DevAssetMapper::class, $assetMapper);

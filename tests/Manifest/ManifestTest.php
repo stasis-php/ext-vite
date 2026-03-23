@@ -12,6 +12,7 @@ final class ManifestTest extends TestCase
 {
     private Manifest $manifest;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->manifest = new Manifest(__DIR__ . '/../manifest.json');

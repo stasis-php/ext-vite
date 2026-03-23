@@ -11,6 +11,7 @@ class TagProviderTest extends TestCase
 {
     private TagProvider $provider;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->provider = new TagProvider();
